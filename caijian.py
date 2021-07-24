@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 def crop(image_read_dir, image_save_dir):
     img = Image.open(image_read_dir)  # 打开图像
     x, y = img.size
-    img1 = img.crop((0, 0, x*0.5, y*0.55))
+    img1 = img.crop((0, 0, x*0.5, y*0.54))
     img1.save(image_save_dir)
 
 def main(image_read_dir, image_save_dir):
