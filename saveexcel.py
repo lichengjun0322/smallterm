@@ -17,7 +17,7 @@ def main(text_dir, save_name):
                     line = line.decode()
                     if '号 :' in line:
                         sheet.write(i, 1, line[line.index(':') + 2:len(line)].replace(' ', ''))
-                    elif '限' in line:
+                    elif '有 限 公 司' in line:
                         if ':' in line :
                             sheet.write(i, 0, line[line.index(':') + 2:len(line)].replace(' ', ''))
                         else:
